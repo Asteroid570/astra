@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(25deg, rgb(6,106,138), rgb(247,181,51));
+            color: white;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background-color: #000;
+            color: #F29706;
+            font-size: 1.2em;
+        }
+        .header .logo {
+            height: 50px;
+        }
+        .header nav {
+            display: flex;
+            gap: 20px;
+        }
+        .header nav a {
+            color: #F29706;
+            text-decoration: none;
+        }
+        .header .auth {
+            display: flex;
+            gap: 10px;
+        }
+        .header .auth a {
+            color: #F29706;
+            text-decoration: none;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 30px;
+            width: 400px;
+            text-align: center;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: #F29706;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #D98E04;
+        }
+        .footer {
+            background-color: #000;
+            color: #F29706;
+            text-align: center;
+            padding: 10px 30px;
+            position: absolute;
+            box-sizing: border-box;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjr-3jK0P-ZVEim4t6HIIRecJO40GTcdvaFmEk3aqzHQ&s" alt="Логотип" class="logo">
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="news.html">Новости</a>
+        </nav>
+        <div class="auth">
+            <a href="login.html">Вход</a>
+            <a href="register.html">Регистрация</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="form-container">
+            <h1>Регистрация</h1>
+            <form action="">
+                <input type="text" placeholder="Введите ваш логин">
+                <br>
+                <input type="password" placeholder="Введите ваш пароль">
+                <br>
+		<input type="email" placeholder="Введите ваш email">
+                <br>
+                <label>
+                    <input type="checkbox" id="community" onclick="toggleEmailNotification()">
+                    Присоединиться к новостному сообществу
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="emailNotification">
+                    Присылать мне уведомления на почту   
+                </label>
+                <br>
+                <input type="submit" value="Зарегистрироваться">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Разработчик: Елисеев Андрей</p>
+    </div>
+
+    <script>
+        function toggleEmailNotification() {
+            var emailCheckbox = document.getElementById("emailNotification");
+            if (!emailCheckbox.disabled) {
+                emailCheckbox.checked = !emailCheckbox.checked;
+            }
+        }
+    </script>
+</body>
+</html>

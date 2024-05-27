@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            color: white;
+            background: linear-gradient(25deg, rgb(6,106,138), rgb(247,181,51));
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background-color: #000;
+            color: #F29706;
+            font-size: 1.2em;
+        }
+        .header .logo {
+            height: 50px;
+        }
+        .header nav {
+            display: flex;
+            gap: 20px;
+        }
+        .header nav a {
+            color: #F29706;
+            text-decoration: none;
+        }
+        .header .auth {
+            display: flex;
+            gap: 10px;
+        }
+        .header .auth a {
+            color: #F29706;
+            text-decoration: none;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 80vh;
+            padding: 20px 30px;
+        }
+        .news-feed {
+            background-color: rgba(179, 179, 179, 0.69);
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 800px;
+        }
+        .news-item {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .news-item h2 {
+            margin: 0 0 10px 0;
+        }
+        .news-item p {
+            margin: 0;
+        }
+        .footer {
+            background-color: #000;
+            color: #F29706;
+            text-align: center;
+            padding: 20px 30px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer .social-links {
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .footer .social-links a {
+            color: #F29706;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer .social-links img {
+            width: 40px;
+            height: 40px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjr-3jK0P-ZVEim4t6HIIRecJO40GTcdvaFmEk3aqzHQ&s" alt="Логотип" class="logo">
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="news.html">Новости</a>
+        </nav>
+        <div class="auth">
+            <a href="login.html">Вход</a>
+            <a href="register.html">Регистрация</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="news-feed">
+            <h1>Новости</h1>
+            <div class="news-item">
+                <h2><a href="new1.html">Новость 1</a></h2>
+                <p>Описание первой новости.</p>
+            </div>
+            <div class="news-item">
+                <h2><a href="new2.html">Новость 2</h2>
+                <p>Описание второй новости.</p>
+            </div>
+            <div class="news-item">
+                <h2><a href="new3.html">Новость 3</h2>
+                <p>Описание третьей новости.</p>
+            </div>
+            <div class="news-item">
+                <h2><a href="new4.html">Новость 4</h2>
+                <p>Описание четвертой новости.</p>
+            </div>
+            <div class="news-item">
+                <h2><a href="new5.html">Новость 5</h2>
+                <p>Описание пятой новости.</p>
+            </div>
+            <div class="news-item">
+                <h2><a href="new6.html">Новость 6</h2>
+                <p>Описание шестой новости.</p>
+            </div>
+            <div class="news-item">
+                <h2><a href="new7.html">Новость 7</h2>
+                <p>Описание седьмой новости.</p>
+            </div>
+            <div class="news-item">
+                <h2><a href="new8.html">Новость 8</h2>
+                <p>Описание восьмой новости.</p>
+            </div>
+            <div class="news-item">
+                <h2><a href="new9.html">Новость 9</h2>
+                <p>Описание девятой новости.</p>
+            </div>
+            <div class="news-item">
+                <h2><a href="new10.html">Новость 10</h2>
+                <p>Описание десятой новости.</p>
+            </div>
+            <div class="news-item">
+                <h2><a href="new11.html">Новость 11</h2>
+                <p>Описание одиннадцатой новости.</p>
+            </div>
+            <div class="news-item">
+                <h2><a href="new12.html">Новость 12</h2>
+                <p>Описание двенадцатой новости.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Следите за нами в социальных сетях:</p>
+        <div class="social-links">
+            <a href="https://t.me/yourusername" target="_blank">
+                <img src="tg-logo.png" alt="Telegram">
+            </a>
+            <a href="https://vk.com/yourusername" target="_blank">
+                <img src="vk-logo.png" alt="ВКонтакте">
+            </a>
+            <a href="https://wa.me/yourusername" target="_blank">
+                <img src="whatsapp-logo.png" alt="WhatsApp">
+            </a>
+            <a href="https://twitter.com/yourusername" target="_blank">
+                <img src="twitter-logo.png" alt="Twitter">
+            </a>
+            <a href="https://facebook.com/yourusername" target="_blank">
+                <img src="facebook-logo.png" alt="Facebook">
+            </a>
+            <a href="https://discord.com/yourusername" target="_blank">
+                <img src="discord-logo.png" alt="Discord">
+            </a>
+        </div>
+        <p>Разработчик: Елисеев Андрей</p>
+    </div>
+</body>
+</html>

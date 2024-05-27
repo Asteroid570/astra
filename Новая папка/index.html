@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Моя Страница</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-size: cover; 
+            color: white; 
+            background: linear-gradient(25deg, rgb(6,106,138), rgb(247,181,51));
+        } 
+        .header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 10px 30px; 
+            background-color: #000; 
+            color: #F29706; 
+            font-size: 1.2em; 
+        } 
+        .header .logo { 
+            height: 50px; 
+        } 
+        .header nav { 
+            display: flex; 
+            gap: 20px; 
+        } 
+        .header nav a { 
+            color: #F29706; 
+            text-decoration: none; 
+        } 
+        .header .auth { 
+            display: flex; 
+            gap: 10px; 
+        } 
+        .header .auth a { 
+            color: #F29706; 
+            text-decoration: none; 
+        } 
+        .content { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 80vh; 
+            padding: 20px 30px; 
+        } 
+        .overlay { 
+            background-color: rgba(179, 179, 179, 0.69); 
+            padding: 20px; 
+            border-radius: 10px; 
+            width: 100%; 
+            max-width: calc(100% - 6cm); 
+            margin: 0 auto; 
+        } 
+        .grid-container { 
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 20px; 
+        } 
+        .grid-item { 
+            background-color: white; 
+            border: 1px solid #ddd; 
+            border-radius: 10px; 
+            overflow: hidden; 
+            cursor: pointer; 
+            text-align: center; 
+        } 
+        .grid-item img { 
+            width: 100%; 
+            height: 150px; 
+            object-fit: cover; 
+        } 
+        .grid-item p { 
+            margin: 10px; 
+            color: black; 
+        } 
+        .footer { 
+            background-color: #000; 
+            color: #F29706; 
+            text-align: center; 
+            padding: 10px 30px; 
+            position: absolute; 
+            box-sizing: border-box; 
+            bottom: 0; 
+            width: 100%; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="header"> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjr-3jK0P-ZVEim4t6HIIRecJO40GTcdvaFmEk3aqzHQ&s" alt="Логотип" class="logo"> 
+        <nav> 
+            <a href="index.html">Главная</a> 
+            <a href="news.html">Новости</a> 
+        </nav> 
+        <div class="auth"> 
+            <a href="login.html">Вход</a> 
+            <a href="register.html">Регистрация</a> 
+        </div> 
+    </div> 
+    <div class="content"> 
+        <div class="overlay"> 
+            <div class="grid-container"> 
+                <div class="grid-item" onclick="window.location.href='page1.html'"> 
+                    <img src="https://droidnews.ru/img/2020/september/rasprodazha-igr-serii-metro-v-steam-skidki-do-80_20-09-20-02-18-41.jpg" alt="Шутер"> 
+                    <p>Шутер - жанр компьютерных игр, в которых игровой процесс основывается на сражениях с использованием огнестрельного или любого другого оружия.</p> 
+                </div> 
+                <div class="grid-item" onclick="window.location.href='page2.html'"> 
+                    <img src="https://i.artfile.ru/1920x1080_675354_[www.ArtFile.ru].jpg" alt="Стелс-экшен"> 
+                    <p>Стелс-экшен - жанр компьютерных игр, в которых игрок должен избегать обнаружения игрового персонажа противниками или скрытно устранять их, не привлекая к себе внимания.</p> 
+                </div> 
+                <div class="grid-item" onclick="window.location.href='page3.html'"> 
+                    <img src="https://media.moddb.com/images/downloads/1/237/236237/metal-gear-rising.jpg" alt="Битэмап и слэшер"> 
+                    <p>Битэмап и слэшер - жанр компьютерных игр, основной чертой которого является рукопашная схватка главного героя против огромного количества врагов. Как правило, действие таких игр происходит в городском антураже.</p> 
+                </div> 
+                <div class="grid-item" onclick="window.location.href='page4.html'"> 
+                    <img src="https://cq.ru/img/f/e/2023/11/08/46825.jpg" alt="Платформер"> 
+                    <p>Платформер - жанр компьютерных игр, в которых основу игрового процесса составляют прыжки по платформам, лазанье по лестницам, сбор предметов, необходимых для победы над врагами или завершения уровня.</p> 
+                </div> 
+                <div class="grid-item" onclick="window.location.href='page5.html'"> 
+                    <img src="https://img.ixbt.site/live/topics/preview/00/02/99/79/995c664e46.jpg" alt="Хоррор"> 
+                    <p>Хоррор - жанр компьютерных игр, для которого характерными являются упор на выживание игрового персонажа и нагнетание атмосферы страха и тревоги, подобно литературе и фильмам ужасов.</p> 
+                </div> 
+                <div class="grid-item" onclick="window.location.href='page6.html'"> 
+                    <img src="https://virtus-img.cdnvideo.ru/images/as-is/plain/74/745a44c6cd92ea115e43b442aed917f0.png@jpg" alt="Файтинг"> 
+                    <p>Файтинг - жанр компьютерных игр, имитирующих рукопашный бой малого числа персонажей.</p> 
+                </div> 
+                <div class="grid-item" onclick="window.location.href='page7.html'"> 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQwNypHfy47kJYpR2ieTvMUm6x0olHPGGqWD1Cye_B6g&s" alt="Стратегия"> 
+                    <p>Стратегия - определенная модель поведения игрока, тот набор ходов, который он выбрал использовать.</p> 
+                </div> 
+                <div class="grid-item" onclick="window.location.href='page8.html'"> 
+                    <img src="https://avatars.dzeninfra.ru/get-zen_doc/1654945/pub_63999872ee1bc829b5f89410_63999881ee1bc829b5f89a02/scale_1200" alt="Головоломка"> 
+                    <p>Головоломка - жанр компьютерных игр, целью которых является решение логических задач, требующих от игрока задействования логики, стратегии и интуиции.</p> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+    <div class="footer"> 
+        <p>Разработчик: Елисеев Андрей</p> 
+    </div> 
+</body> 
+</html>
